@@ -277,6 +277,14 @@ header {
     width: 270px;
 }
 
+.columnist figcaption {
+    font-size: .8em;
+    font-family: var(--font0);
+    font-weight: 400;
+    text-align: right;
+    color: var(--cor2);
+    padding: 5px 0 0 0;
+}
 /*Controlando o Sobre*/
 .about article {
     display: flex;
