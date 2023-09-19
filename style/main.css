@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor0: #000000;
+    --cor1: #ffffff;
+    --cor2: #626262;
+    --cor3: #d6cbcb;
+    --cor4: #deb887;
+    --cor5: #f7f7f7;
+    --font0: 'IBM Plex Serif', serif;
+    --font1: Georgia, 'Times New Roman', Times, serif;
+    --font2: ;
+}
+
+/* Configuração de Resete */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* configuração da largura maxima */
+body {
+    background-color: var(--cor1);
+    max-width: 1280px;
+    margin: 0 auto 25px auto;
+}
+
+/* Alinhamento da home page */
+header {
+    padding: 15px 0 15px 0;
+}
+
+.menu-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Menu iterativo */
+.menu-interactive input[type="checkbox"] {
+    display: none;
+}
+
+.menu-interactive nav {
+    width: 180px;
+    height: 100%;
+    left: -10000px;
+    position: absolute;
+}
+
+.menu-interactive input[type="checkbox"]:checked ~ nav {
+    left: 0;
+    top: 25px;
+    height: 100vh;
+}
+
+.menu-interactive ul {
+    top: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-interactive a{
+    font-size: .9em;
+    font-family: var(--font0);
+    font-weight: 400;
+    color: var(--cor0);
+    display: block;
+    padding: 2px 5px;
+    background-color: var(--cor3);
+}
+
+.menu-interactive a:hover {
+    background-color: var(--cor1);
+}
+
+.menu-interactive label {
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+}
+
+/* Menu da direito Nasa Tv e Login */
+.menu-right nav ul li{
+    display: inline;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+}
+
+.menu-right a {
+    font-size: 1em;
+    font-family: var(--font0);
+    font-weight: 500;
+    color: var(--cor0);
+}
+
+.menu-right a:hover {
+    background-color: var(--cor5);
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 5px var(--cor5);
+}
+
+/* Titulo da pagina */
+.title-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-page h1 {
+    font-size: 3em;
+    font-family: var(--font0);
+    font-weight: 300;
+}
+
+/* Menu horizontal */
+.menu-bottom {
+    border-top: 1px solid var(--cor0);
+    border-bottom: double var(--cor0);
+}
+
+.menu-horizontal nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 4px;
+    margin: 0 20px;
+}
+
+.menu-bottom a {
+    font-size: .9em;
+    font-family: var(--font0);
+    font-weight: 500;
+    color: var(--cor0);
+}
+
+.menu-bottom a:hover {
+    background-color: var(--cor5);
+}
+
+#ere::before {
+    content: "";
+    padding-right: 20px;
+    border-left: 1px solid var(--cor2);
+}
+
+/* Campo de pesquisa */
+.search-box > form {
+    background-color: var(--cor4);
+    max-width: 100%;
+    height: 25px;
+    display: flex;
+}
+
+.search-box > form > input {
+    flex: 1;
+    padding: 0 0 0 10px;
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--cor2);
+    border-bottom: 1px solid;
+    font-size: 1em;
+    font-family: var(--cor0);
+}
+
+.search-box > form > button {
+    background-color: var(--cor3);
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--cor2);
+    border-right: 1px solid var(--cor2);
+    border-bottom: 1px solid var(--cor2);
+    font-size: 1em;
+    font-family: var(--cor0);
+    color: var(--cor0);
+    letter-spacing: 1px;
+}
+
+/* Controlando o espaçamento dos artigos e colunistas */
+.container{
+    display: grid;
+    grid-template-columns: 1000px 280px;
+}
+
+#news-article {
+    border-right: 1px solid var(--cor3);
+    padding: 0 10px 0 0;
+}
+
+#news-columnist {
+    padding: 0 0 0 10px;
+}
+
+/* Controlando as notícias artigos */
+.news article {
+    display: flex;
+    margin: 0 0 20px 0;
+    padding: 5px 5px 20px 5px;
+    border-bottom: 1px solid var(--cor0);
+}
+
+.summary {
+    margin: 0 20px 0 0;
+}
+
+.summary h2 {
+    font-size: 1.4em;
+    font-family: var(--font0);
+    font-weight: 600;
+    padding: 0 0 10px 0;
+}
+
+.summary p {
+    font-size: 1em;
+    font-family: var(--font0);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.news-img img {
+    height: 400px;
+    width: 600px;
+}
+
+.news-img figcaption {
+    font-size: .7em;
+    font-family: var(--font0);
+    font-weight: 400;
+    color: var(--cor2);
+    text-align: end;
+}
+
+/* Controlando as notícias dos colunistas */
+#title-columnist h3{
+    font-size: 1.3em;
+    font-family: var(--font0);
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid var(--cor2);
+}
+
+.columnist article {
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid var(--cor2);
+}
+
+.columnist h3{
+    font-size: 1.3em;
+    font-family: var(--font0);
+    font-weight: 600;
+    padding: 0 0 5px 0;
+}
+
+.columnist p {
+    font-size: 1em;
+    font-family: var(--font0);
+    font-weight: 400;
+    text-align: justify;
+    padding: 0 0 10px 0;
+}
+
+.columnist img {
+    display: flex;
+    align-items: center;
+    width: 270px;
+}
+
+/*Controlando o Sobre*/
+.about article {
+    display: flex;
+    padding: 15px 15px;
+}
+
+.about-img {
+    width: 640px;
+    height: 480px;
+}
+
+.about h3 {
+    font-size: 1.4em;
+    font-family: var(--font0);
+    font-weight: 500;
+    padding: 0 0 5px 0;
+}
+
+.about p {
+    font-size: .9em;
+    font-family: var(--font0);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.about div {
+    padding: 0px 0 0 20px;
+}
+.brands-list {
+    padding: 15px 0 0 0;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+.brands-list img {
+    width: 24px;
+    margin: 0 15px 0 0;
+}
+
+/* Roda pe do site */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor3);
+    border-bottom: 1px solid var(--cor2);
+}
+
+footer h1 {
+    font-size: .9em;
+    font-family: var(--font0);
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+/* botão de voltar par ao topo */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--cor1);
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
