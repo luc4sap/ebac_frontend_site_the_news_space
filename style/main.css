@@ -326,6 +326,19 @@ header {
     margin: 0 15px 0 0;
 }
 
+/* Formulário para entrar em contato */
+form input, form textarea, form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 80px;
+}
+
 /* Roda pe do site */
 footer {
     display: flex;
