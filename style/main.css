@@ -231,6 +231,11 @@ main {
     border-bottom: 1px solid var(--cor0);
 }
 
+.news article:hover {
+    background-color: var(--cor2);
+    
+}
+
 .summary {
     margin: 0 20px 0 0;
 }
