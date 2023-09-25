@@ -327,16 +327,30 @@ header {
 }
 
 /* Formulário para entrar em contato */
-form input, form textarea, form button{
+#contato > input{
     display: block;
-    width: 320px;
+    width: 580px;
     margin-bottom: 8px;
-    padding: 8px;
+    padding: 8px 0 0 0;
 }
 
-form textarea{
+#contato > textarea{
+    display: block;
+    width: 580px;
+    margin-bottom: 8px;
+    padding: 8px 0 0 0;
+}
+
+#contato > textarea{
     resize: none;
-    height: 80px;
+    height: 98px;
+}
+
+#contato > button{
+    display: block;
+    width: 580px;
+    margin-bottom: 8px;
+    padding: 8px 0 0 0;
 }
 
 /* Roda pe do site */
