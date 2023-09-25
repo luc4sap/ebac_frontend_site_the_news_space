@@ -29,10 +29,16 @@ body {
     background-color: var(--cor1);
     max-width: 1280px;
     margin: 0 auto 25px auto;
+
+    height: 100vh;
+    background: var(--cor0) url(../image/moon-003.jpg) center top no-repeat fixed;
+    background-size: cover;
 }
 
 /* Alinhamento da home page */
 header {
+    background-color: var(--cor5);
+    border-radius: 5px;
     padding: 15px 0 15px 0;
 }
 
@@ -184,6 +190,12 @@ header {
     letter-spacing: 1px;
 }
 
+/* Configuração de fundo do corpo do site */
+main {
+    background-color: var(--cor5);
+    border-radius: 5px;
+}
+
 /* Controlando o espaçamento dos artigos e colunistas */
 .container{
     display: grid;
@@ -251,7 +263,7 @@ header {
 
 .columnist article {
     display: block;
-    margin: 0 0 5px 0;
+    margin: 0 10px 5px 0;
     padding: 0 0 10px 0;
     border-bottom: 1px solid var(--cor2);
 }
@@ -275,6 +287,7 @@ header {
     display: flex;
     align-items: center;
     width: 270px;
+    padding: 0 10px 0 0;
 }
 
 .columnist figcaption {
