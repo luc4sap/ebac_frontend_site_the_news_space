@@ -4,11 +4,11 @@
 
 :root {
     --cor0: #000000;
-    --cor1: #ffffff;
-    --cor2: #626262;
-    --cor3: #d6cbcb;
-    --cor4: #deb887;
-    --cor5: #f7f7f7;
+    --cor1: #FFFFFF;
+    --cor2: #D9D9D9;
+    --cor3: #8C817E;
+    --cor4: #EB3D2A;
+    --cor5: #0D0D0D;
     --font0: 'IBM Plex Serif', serif;
     --font1: Georgia, 'Times New Roman', Times, serif;
     --font2: ;
@@ -26,18 +26,14 @@
 
 /* configuração da largura maxima */
 body {
-    background-color: var(--cor1);
+    background-color: var(--cor5);
     max-width: 1280px;
     margin: 0 auto 25px auto;
-
-    height: 100vh;
-    background: var(--cor0) url(../image/moon-003.jpg) center top no-repeat fixed;
-    background-size: cover;
 }
 
 /* Alinhamento da home page */
 header {
-    background-color: var(--cor5);
+    background-color: var(--cor1);
     border-radius: 5px;
     padding: 15px 0 5px 0;
     margin-bottom: 10px;
@@ -71,6 +67,8 @@ header {
     top: 15px;
     position: absolute;
     width: 100%;
+    background-color: var(--cor2);
+    border-radius: 5px;
 }
 
 .menu-interactive a{
@@ -79,12 +77,12 @@ header {
     font-weight: 400;
     color: var(--cor0);
     display: block;
-    padding: 2px 5px;
-    background-color: var(--cor3);
+    padding: 5px 5px;
 }
 
 .menu-interactive a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
+    color: var(--cor1);
 }
 
 .menu-interactive label {
@@ -107,12 +105,13 @@ header {
     font-family: var(--font0);
     font-weight: 500;
     color: var(--cor0);
+    padding: 2px;
 }
 
 .menu-right a:hover {
-    background-color: var(--cor5);
-    border-radius: 1px;
-    box-shadow: 0px 0px 0px 5px var(--cor5);
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border-radius: 5px;
 }
 
 /* Titulo da pagina */
@@ -144,20 +143,23 @@ header {
 }
 
 .menu-bottom a {
-    font-size: .9em;
+    font-size: 1em;
     font-family: var(--font0);
     font-weight: 500;
     color: var(--cor0);
 }
 
 .menu-bottom a:hover {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 2px;
+    border-radius: 5px;
 }
 
 #ere::before {
     content: "";
     padding-right: 20px;
-    border-left: 1px solid var(--cor2);
+    border-left: 1px solid var(--cor0);
 }
 
 /* Campo de pesquisa */
@@ -166,7 +168,6 @@ header {
 }
 
 .search-box > form {
-    background-color: var(--cor4);
     max-width: 100%;
     height: 25px;
     display: flex;
@@ -179,6 +180,8 @@ header {
     outline: none;
     font-size: 1em;
     font-family: var(--cor0);
+    background-color: var(--cor2);
+    border-radius: 5px;
 }
 
 .search-box > form > button {
@@ -186,16 +189,21 @@ header {
     padding: 0 10px;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: var(--cor0);
+    font-weight: 500;
     color: var(--cor0);
     letter-spacing: 1px;
     border-radius: 5px;
 }
 
+.search-box button:hover {
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+
 /* Configuração de fundo do corpo do site */
 main {
-    background-color: var(--cor5);
     border-radius: 5px;
 }
 
@@ -206,8 +214,9 @@ main {
 }
 
 #news-article {
-    border-right: 1px solid var(--cor3);
-    padding: 0 10px 0 0;
+    background-color: var(--cor1);
+    margin: 0 10px 0 0;
+    border-radius: 5px;
 }
 
 #news-columnist {
@@ -249,11 +258,16 @@ main {
     font-size: .7em;
     font-family: var(--font0);
     font-weight: 400;
-    color: var(--cor2);
+    color: var(--cor0);
     text-align: end;
 }
 
 /* Controlando as notícias dos colunistas */
+#news-columnist{
+    background-color: var(--cor1);
+    border-radius: 5px;
+}
+
 #title-columnist h3{
     font-size: 1.3em;
     font-family: var(--font0);
@@ -261,14 +275,14 @@ main {
     text-align: center;
     margin: 0 0 5px 0;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid var(--cor2);
+    border-bottom: 1px solid var(--cor0);
 }
 
 .columnist article {
     display: block;
     margin: 0 10px 5px 0;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid var(--cor2);
+    border-bottom: 1px solid var(--cor0);
 }
 
 .columnist h3{
@@ -298,7 +312,7 @@ main {
     font-family: var(--font0);
     font-weight: 400;
     text-align: right;
-    color: var(--cor2);
+    color: var(--cor0);
     padding: 5px 0 0 0;
 }
 
@@ -308,6 +322,12 @@ main {
 }
 
 /*Controlando o Sobre*/
+.about {
+    background-color: var(--cor1);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 .about article {
     display: flex;
     padding: 15px 15px;
@@ -362,14 +382,23 @@ main {
 
 #contato > textarea{
     resize: none;
-    height: 98px;
+    height: 94px;
+}
+
+button {
+    color: var(--cor1);
+    font-size: 1em;
+    font-family: var(--font0);
 }
 
 #contato > button{
+    background-color: var(--cor4);
     display: block;
     width: 600px;
-    margin-bottom: 8px;
-    padding: 8px 0 0 0;
+    margin: 4px 0;
+    padding: 4px 0;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Roda pe do site */
@@ -377,8 +406,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor3);
-    border-bottom: 1px solid var(--cor2);
+    background-color: var(--cor4);
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -388,6 +416,7 @@ footer h1 {
     font-family: var(--font0);
     font-weight: 500;
     margin: 5px 0;
+    color: var(--cor1);
 }
 
 /* botão de voltar par ao topo */
